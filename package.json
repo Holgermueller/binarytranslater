@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postcss:watch": "postcss index.css --dir public --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/Holgermueller/newsletter/issues"
   },
-  "homepage": "https://github.com/Holgermueller/newsletter#readme"
+  "homepage": "https://github.com/Holgermueller/newsletter#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0"
+  }
 }
