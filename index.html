@@ -17,12 +17,19 @@
     <header>Sign up for our newsletter!!</header>
     <main>
       <form action="">
-        <input type="text" name="name" placeholder="Name" />
-        <input type="email" name="email" placeholder="email" />
-        <input type="checkbox" name="checkbox" id="checkBox" />
-        <button>Submit</button>
+        <input type="text" name="name" placeholder="Name" id="name" />
+        <input type="email" name="email" placeholder="email" id="email" />
+        <input type="checkbox" name="agree" id="agree" />
+        <label for="agree">I agree to the terms and conditions!! </label>
+        <div class="div-for-centering-button">
+          <button type="button" onclick="submitForm()" id="submit">
+            Submit
+          </button>
+        </div>
       </form>
     </main>
     <footer>&copy; 2022 Holger Mueller</footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

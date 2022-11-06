@@ -11,6 +11,40 @@ header {
   font-weight: 500;
 }
 
+form {
+  width: 55%;
+  margin: 20px auto;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 4px 0;
+}
+
+.div-for-centering-button {
+  text-align: center;
+}
+
+button {
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+input[type="checkbox"] {
+  border-radius: 5px;
+  padding: 8px;
+  margin: 4px 0;
+}
+
+label {
+  font-size: 1.25rem;
+}
+
 footer {
   position: absolute;
   width: 100%;
