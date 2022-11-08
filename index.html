@@ -19,10 +19,15 @@
       <form action="" id="form">
         <input type="text" name="name" placeholder="Name" id="name" />
         <input type="email" name="email" placeholder="email" id="email" />
-        <input type="checkbox" name="agree" id="agree" />
+        <input
+          type="checkbox"
+          name="agree"
+          id="agree"
+          onchange="enableSubmitButton()"
+        />
         <label for="agree">I agree to the terms and conditions!! </label>
         <div class="div-for-centering-button">
-          <button type="button" onclick="submitForm()" id="submit">
+          <button type="button" onclick="submitForm()" id="submit" disabled>
             Submit
           </button>
         </div>
