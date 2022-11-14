@@ -1,10 +1,9 @@
-const submitForm = () => {
-  console.log("click");
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let agree = document.getElementById("agree").checked;
-  console.log(name, email, agree);
+let output = document.getElementById("outputArea");
 
+const submitForm = () => {
+  let input = document.getElementById("input").value;
+
+  englishToBinary(input);
   resetForm();
 };
 
@@ -13,13 +12,12 @@ const resetForm = () => {
   form.reset();
 };
 
-const enableSubmitButton = () => {
-  let submit = document.getElementById("submit");
-  let agree = document.getElementById("agree").checked;
+const binaryToEnglish = () => {
+  console.log("click");
+};
 
-  if (agree == true) {
-    submit.disabled = false;
-  } else {
-    submit.disabled = true;
+const englishToBinary = (input) => {
+  for (let i = 0; i < input.length; i++) {
+    output.innerHTML += input[i].charCodeAt(0).toString(2) + " ";
   }
 };

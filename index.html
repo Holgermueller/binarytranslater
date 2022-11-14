@@ -11,27 +11,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="public/index.css" />
-    <title>Newsletter Form</title>
+    <title>Binary Translator</title>
   </head>
   <body>
-    <header>Sign up for our newsletter!!</header>
+    <header>Binary Translator</header>
     <main>
       <form action="" id="form">
-        <input type="text" name="name" placeholder="Name" id="name" />
-        <input type="email" name="email" placeholder="email" id="email" />
-        <input
-          type="checkbox"
-          name="agree"
-          id="agree"
-          onchange="enableSubmitButton()"
-        />
-        <label for="agree">I agree to the terms and conditions!! </label>
+        <textarea name="input" id="input" cols="30" rows="10"></textarea>
+
         <div class="div-for-centering-button">
-          <button type="button" onclick="submitForm()" id="submit" disabled>
+          <button type="button" onclick="submitForm()" id="submit">
             Submit
           </button>
         </div>
       </form>
+      <div class="output-area" id="outputArea"></div>
     </main>
     <footer>&copy; 2022 Holger Mueller</footer>
 
