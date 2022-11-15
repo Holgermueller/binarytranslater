@@ -20,7 +20,14 @@ textarea {
   width: 100%;
 }
 
+.switch-div {
+  margin: 8px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .div-for-centering-button {
+  margin: 8px auto;
   text-align: center;
 }
 

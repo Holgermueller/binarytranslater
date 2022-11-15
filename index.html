@@ -10,6 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="public/index.css" />
     <title>Binary Translator</title>
   </head>
@@ -18,6 +30,18 @@
     <main>
       <form action="" id="form">
         <textarea name="input" id="input" cols="30" rows="10"></textarea>
+
+        <div
+          data-toggle="buttons-radio"
+          class="switch-div btn-group btn-group-lg"
+        >
+          <button type="button" class="btn btn-primary">
+            Binary to English
+          </button>
+          <button type="button" class="btn btn-primary">
+            English to Binary
+          </button>
+        </div>
 
         <div class="div-for-centering-button">
           <button type="button" onclick="submitForm()" id="submit">
