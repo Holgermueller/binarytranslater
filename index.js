@@ -21,3 +21,7 @@ const englishToBinary = (input) => {
     output.innerHTML += input[i].charCodeAt(0).toString(2) + " ";
   }
 };
+
+const eToBIsChecked = () => {};
+
+const bToEIsChecked = () => {};

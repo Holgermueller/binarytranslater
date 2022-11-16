@@ -33,14 +33,38 @@
 
         <div
           data-toggle="buttons-radio"
-          class="switch-div btn-group btn-group-lg"
+          class="btn-group btn-group-lg d-flex"
+          role="group"
+          aria-label="Binary-English Toggle"
         >
-          <button type="button" class="btn btn-primary">
+          <button
+            type="button"
+            class="btn btn-primary"
+            onclick="bToEIsChecked()"
+          >
             Binary to English
           </button>
-          <button type="button" class="btn btn-primary">
+          <button
+            type="button"
+            class="btn btn-primary"
+            onclick="eToBIsChecked()"
+          >
             English to Binary
           </button>
+        </div>
+
+        <div class="form-check form-switch">
+          <label class="form-check-label" for="flexSwitchCheckDefault"
+            >English to Binary</label
+          >
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="flexSwitchCheckDefault"
+          />
+          <label class="form-check-label" for="flexSwitchCheckDefault"
+            >Binary to English</label
+          >
         </div>
 
         <div class="div-for-centering-button">
