@@ -32,38 +32,31 @@
         <textarea name="input" id="input" cols="30" rows="10"></textarea>
 
         <div
-          data-toggle="buttons-radio"
           class="btn-group btn-group-lg d-flex"
           role="group"
           aria-label="Binary-English Toggle"
         >
-          <button
-            type="button"
-            class="btn btn-primary"
-            onclick="bToEIsChecked()"
-          >
-            Binary to English
-          </button>
-          <button
-            type="button"
-            class="btn btn-primary"
-            onclick="eToBIsChecked()"
-          >
-            English to Binary
-          </button>
-        </div>
-
-        <div class="form-check form-switch">
-          <label class="form-check-label" for="flexSwitchCheckDefault"
-            >English to Binary</label
-          >
           <input
-            class="form-check-input"
-            type="checkbox"
-            id="flexSwitchCheckDefault"
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio1"
+            autocomplete="off"
+            checked
           />
-          <label class="form-check-label" for="flexSwitchCheckDefault"
+          <label class="btn btn-outline-primary" for="btnradio1"
             >Binary to English</label
+          >
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio2"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-primary" for="btnradio2"
+            >English to Binary</label
           >
         </div>
 

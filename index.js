@@ -1,7 +1,17 @@
 let output = document.getElementById("outputArea");
 
 const submitForm = () => {
+  let binaryToEnglishButton = document.getElementById("btnradio1").checked;
+  let englishToBinaryButton = document.getElementById("btnradio2").checked;
   let input = document.getElementById("input").value;
+
+  if (binaryToEnglishButton == true) {
+    console.log("b to e");
+  }
+
+  if (englishToBinaryButton == true) {
+    console.log("E to B");
+  }
 
   englishToBinary(input);
   resetForm();
@@ -21,7 +31,3 @@ const englishToBinary = (input) => {
     output.innerHTML += input[i].charCodeAt(0).toString(2) + " ";
   }
 };
-
-const eToBIsChecked = () => {};
-
-const bToEIsChecked = () => {};
