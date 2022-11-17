@@ -3,17 +3,21 @@ let output = document.getElementById("outputArea");
 const submitForm = () => {
   let binaryToEnglishButton = document.getElementById("btnradio1").checked;
   let englishToBinaryButton = document.getElementById("btnradio2").checked;
+  output.innerHTML = "";
   let input = document.getElementById("input").value;
 
-  if (binaryToEnglishButton == true) {
-    console.log("b to e");
+  if (input === "") {
+    output.innerHTML = "Please enter a value...";
+  } else {
+    if (binaryToEnglishButton == true) {
+      binaryToEnglish(input);
+    }
+
+    if (englishToBinaryButton == true) {
+      englishToBinary(input);
+    }
   }
 
-  if (englishToBinaryButton == true) {
-    console.log("E to B");
-  }
-
-  englishToBinary(input);
   resetForm();
 };
 
@@ -23,7 +27,7 @@ const resetForm = () => {
 };
 
 const binaryToEnglish = () => {
-  console.log("click");
+  output.innerHTML = "Under Construction...";
 };
 
 const englishToBinary = (input) => {
