@@ -26,8 +26,11 @@ const resetForm = () => {
   form.reset();
 };
 
-const binaryToEnglish = () => {
-  output.innerHTML = "Under Construction...";
+const binaryToEnglish = (input) => {
+  input = input.split(" ");
+  output.innerHTML = input
+    .map((elem) => String.fromCharCode(parseInt(elem, 2)))
+    .join("");
 };
 
 const englishToBinary = (input) => {
